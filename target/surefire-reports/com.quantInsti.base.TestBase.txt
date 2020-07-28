@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.quantInsti.base.TestBase
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.28 sec <<< FAILURE!
+setUp(com.quantInsti.base.TestBase)  Time elapsed: 2.393 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\src\test\resources\executables\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.quantInsti.base.TestBase.setUp(TestBase.java:24)
+

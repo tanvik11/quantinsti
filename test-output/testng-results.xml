@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="3" total="13" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="60169" started-at="2020-07-28T13:14:58Z" finished-at="2020-07-28T13:15:58Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="60169" started-at="2020-07-28T13:14:58Z" finished-at="2020-07-28T13:15:58Z">
+      <class name="com.quantInsti.base.TestBase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.quantInsti.base.TestBase@1d176f7]" name="setUp" is-config="true" duration-ms="31781" started-at="2020-07-28T18:44:26Z" finished-at="2020-07-28T18:44:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.quantInsti.base.TestBase -->
+      <class name="com.quanInsti.tests.CartPage">
+        <test-method status="PASS" signature="getCourseNamesAndCount()[pri:6, instance:com.quanInsti.tests.CartPage@6c3152]" name="getCourseNamesAndCount" duration-ms="319" started-at="2020-07-28T18:45:38Z" finished-at="2020-07-28T18:45:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCourseNamesAndCount -->
+        <test-method status="PASS" signature="getPriceDetails()[pri:7, instance:com.quanInsti.tests.CartPage@6c3152]" name="getPriceDetails" duration-ms="117" started-at="2020-07-28T18:45:38Z" finished-at="2020-07-28T18:45:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPriceDetails -->
+        <test-method status="PASS" signature="viewCourseDetails()[pri:8, instance:com.quanInsti.tests.CartPage@6c3152]" name="viewCourseDetails" duration-ms="7700" started-at="2020-07-28T18:45:38Z" finished-at="2020-07-28T18:45:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCourseDetails -->
+        <test-method status="FAIL" signature="removeCourse()[pri:9, instance:com.quanInsti.tests.CartPage@6c3152]" name="removeCourse" duration-ms="5381" started-at="2020-07-28T18:45:46Z" finished-at="2020-07-28T18:45:51Z">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[no such alert
+  (Session info: chrome=83.0.4103.116)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'M4708787', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ctamhan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1e007e31193ceed257c3067ed974271e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=83.0.4103.116)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'M4708787', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ctamhan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1e007e31193ceed257c3067ed974271e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:928)
+	at com.quanInsti.tests.CartPage.removeCourse(CartPage.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeCourse -->
+        <test-method status="PASS" signature="applyCoupon()[pri:10, instance:com.quanInsti.tests.CartPage@6c3152]" name="applyCoupon" duration-ms="834" started-at="2020-07-28T18:45:51Z" finished-at="2020-07-28T18:45:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyCoupon -->
+        <test-method status="PASS" signature="signOut()[pri:11, instance:com.quanInsti.tests.CartPage@6c3152]" name="signOut" duration-ms="5703" started-at="2020-07-28T18:45:52Z" finished-at="2020-07-28T18:45:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signOut -->
+      </class> <!-- com.quanInsti.tests.CartPage -->
+      <class name="com.quanInsti.tests.CoursePage">
+        <test-method status="PASS" signature="getCourseDetails()[pri:4, instance:com.quanInsti.tests.CoursePage@bc05a6]" name="getCourseDetails" duration-ms="115" started-at="2020-07-28T18:45:33Z" finished-at="2020-07-28T18:45:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCourseDetails -->
+        <test-method status="PASS" signature="clickOnEnrollNow()[pri:5, instance:com.quanInsti.tests.CoursePage@bc05a6]" name="clickOnEnrollNow" duration-ms="5171" started-at="2020-07-28T18:45:33Z" finished-at="2020-07-28T18:45:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnEnrollNow -->
+      </class> <!-- com.quanInsti.tests.CoursePage -->
+      <class name="com.quanInsti.tests.LoginPage">
+        <test-method status="PASS" signature="loginAs()[pri:1, instance:com.quanInsti.tests.LoginPage@1fe2924]" name="loginAs" duration-ms="6157" started-at="2020-07-28T18:44:58Z" finished-at="2020-07-28T18:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAs -->
+        <test-method status="PASS" signature="selectOptionFromMenu()[pri:2, instance:com.quanInsti.tests.LoginPage@1fe2924]" name="selectOptionFromMenu" duration-ms="28578" started-at="2020-07-28T18:45:04Z" finished-at="2020-07-28T18:45:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectOptionFromMenu -->
+      </class> <!-- com.quanInsti.tests.LoginPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
